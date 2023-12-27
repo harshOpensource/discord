@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const font = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Discord",
+  title: "Discord Clone",
   description: "This is a Discord clone made with Next.js and Tailwind CSS.",
 };
 
