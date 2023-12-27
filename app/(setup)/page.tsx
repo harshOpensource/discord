@@ -1,3 +1,5 @@
+import { InitialModal } from "@/components/Modals/initial-modal";
+import { ModeToggle } from "@/components/mode-toggle";
 import { db } from "@/lib/db";
 import { initialProfile } from "@/lib/initial-profile";
 import { redirect } from "next/navigation";
@@ -19,11 +21,7 @@ const PageSetup = async () => {
     return redirect(`/servers/${server.id}`);
   }
 
-  return (
-    <div>
-      <h1>Setup</h1>
-    </div>
-  );
+  return <InitialModal />;
 };
 
 export default PageSetup;
